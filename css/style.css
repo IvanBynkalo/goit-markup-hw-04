@@ -57,6 +57,11 @@ body {
     margin-left: auto;
     
 }
+
+.conact-icon {
+    margin-right: 10px;
+    fill: #757575;
+}
 .header {
     border: 1px solid #ECECEC;
     padding-top: 24px;
@@ -95,27 +100,40 @@ body {
 }
 
 .contact-number {
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: #757575;
-        margin-left: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-left: 50px;
+}
+.contact-number:hover .conact-icon,
+.contact-number:focus .conact-icon {
+    fill: #2196F3;
 }
 .contact-number:hover,
 .contact-number:focus {
     color: #2196F3;
 }
 .contact-mail {
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: #757575;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
     }
     
-    .contact-mail:hover,
-    .contact-mail:focus {
-        color: #2196F3;
+    .contact-mail:hover .conact-icon, 
+    .contact-mail:focus.conact-icon{
+        fill: #2196F3;
     }
+        .contact-mail:hover ,
+        .contact-mail:focus{
+            color: #2196F3;
+            
+        }
     .title {
                       
     width: 696px;
@@ -135,9 +153,14 @@ body {
                         
     }
 .bacground {
-    background: #2F303A;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+    background-position: center ;
+    background-size: cover;
     padding: 200px 0;
     text-align: center;
+    background-color: #C4C4C4;;
           
     }
 .modal-btn {
@@ -219,35 +242,61 @@ body {
     margin-bottom: -30px;
 }
 .team-content-item-botton {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 30px 32px;
     width: 270px;
-        background: #FFFFFF;
+    background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 .subtitle {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        color: #212121;
-        margin-bottom: 50px;
-        text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: #212121;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .user-content {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        color: #212121;
-        text-align: center;
-        margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 10px;
                 
 }
 .job-title {
-        font-size: 16px;
-        line-height: 1.19; 
-        color: #757575;
-        text-align: center;
+    font-size: 16px;
+    line-height: 1.19; 
+    color: #757575;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+.social-list {
+    display: flex;
+    justify-content: space-between;
+   }
+   .social-list-icon {
+    fill: #AFB1B8;;
+   }
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: #FFFFFF;
+    background: #188CE8;
+}
+.social-list-link:hover ,
+.social-list-link:focus {
+        background: #188CE8;
 }
 /* ---- End content---- */
 /* --- Start footer--- */
@@ -272,6 +321,7 @@ body {
 .address-list-nav:hover,
 .address-list-nav:focus {
     color: #2196F3;
+    
 }
 .address-list-link {
         font-style: normal;
