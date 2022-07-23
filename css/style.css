@@ -206,6 +206,7 @@ body {
         font-size: 14px;
         text-transform: uppercase;
         color: #212121;
+
 }
 .about-text {
         line-height: 1.71;  
@@ -295,6 +296,7 @@ body {
 .social-list {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
    }
    .social-list-icon {
     fill: #AFB1B8;;
@@ -352,11 +354,17 @@ border: 1px solid #188CE8;
 
 /* --- Start footer--- */
 .footer {
-        display: flex;
+        flex-direction: row;
         background: #2F303A;
         padding-top: 60px;
         padding-bottom: 60px;
-
+}
+.footer-item {
+    display: flex;
+    align-items: baseline;  
+}
+.adress-info {
+    margin-right: 70px;
 }
 .address {
     margin-top: 20px;
@@ -386,6 +394,48 @@ border: 1px solid #188CE8;
 .address-list-link:focus {
     color: #2196F3;
 }
+
+.footer-title {
+    font-weight: 700;
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff; 
+}
+
+.footer-social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-social-list {
+    display: flex;
+    margin-top: 20px;
+}
+.footer-social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-social-list-icon {
+    fill: #ffffff;
+    
+}
+
+.footer-social-list-link:hover .footer-social-list-icon,
+.footer-social-list-link:focus .footer-social-list-icon {
+    fill: #FFFFFF;
+    background: #188CE8;
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background: #188CE8;
+}
+
 /* --- End footer --- */
 /* ---- Start portfolio--- */
 .container-h {
