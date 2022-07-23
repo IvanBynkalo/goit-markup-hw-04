@@ -212,6 +212,16 @@ body {
         color: #757575;
         margin-top: 10px;
 }
+.about-list-blok{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
 /* --- End about---- */
 /* --- Start content  */
 .job-content {
@@ -299,6 +309,57 @@ body {
         background: #188CE8;
 }
 /* ---- End content---- */
+
+/*--- Start Job Client ---*/
+
+.job-clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.job-clients-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+/*
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-list-icon {
+    fill: #AFB1B8;
+    ;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: #FFFFFF;
+    background: #188CE8;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background: #188CE8;
+/* ---- End Job Client---- */
+
 /* --- Start footer--- */
 .footer {
         display: flex;
