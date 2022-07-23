@@ -314,11 +314,12 @@ body {
 
 .job-clients-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
     
 }
-.job-clients-item {
+.job-clients-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,37 +328,26 @@ body {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-
-/*
-.social-list-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
+.job-clients-item {
+/*flex-basis: calc((100%-180px)/6);*/
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.job-clients-icon{
+fill: #AFB1B8;
 }
 
-.social-list {
-    display: flex;
-    justify-content: space-between;
+.job-clients-link:hover .job-clients-icon,
+.job-clients-link:focus .job-clients-icon {
+    fill: #188CE8;
+    
 }
 
-.social-list-icon {
-    fill: #AFB1B8;
-    ;
+.job-clients-link:hover,
+.job-clients-link:focus {
+border: 1px solid #188CE8;
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: #FFFFFF;
-    background: #188CE8;
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-    background: #188CE8;
 /* ---- End Job Client---- */
 
 /* --- Start footer--- */
