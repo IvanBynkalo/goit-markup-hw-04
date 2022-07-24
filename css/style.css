@@ -303,8 +303,7 @@ body {
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
     fill: #FFFFFF;
-    background: #188CE8;
-}
+    }
 .social-list-link:hover ,
 .social-list-link:focus {
         background: #188CE8;
@@ -427,7 +426,7 @@ border: 1px solid #188CE8;
 .footer-social-list-link:hover .footer-social-list-icon,
 .footer-social-list-link:focus .footer-social-list-icon {
     fill: #FFFFFF;
-    background: #188CE8;
+    
 }
 
 .footer-social-list-link:hover,
